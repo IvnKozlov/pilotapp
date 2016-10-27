@@ -19,20 +19,35 @@
 	      <version>3.8.1</version>
 	      <scope>test</scope>
 	</dependency>
-	<dependency>
-    <groupId>javax.validation</groupId>
-    <artifactId>validation-api</artifactId>
-    <version>1.0.0.GA</version>
-</dependency>
+
 
 <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-annotations -->
-<dependency>
+<!--  <dependency>
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-annotations</artifactId>
     <version>3.4.0.GA</version>
+</dependency>-->
+
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>3.6.10.Final</version>
 </dependency>
 
-
+<dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>1.0.0.GA</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>4.2.0.Final</version>
+    </dependency>
+    
 	<dependency>
    <groupId>javax.persistence</groupId>
    <artifactId>persistence-api</artifactId>
@@ -81,12 +96,7 @@
             <version>4.0.1.RELEASE</version>
             <scope>runtime</scope>
         </dependency>
-        
-        <dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-core</artifactId>
-		    <version>5.1.0.Final</version>
-		</dependency>
+
 	<!--	<dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
@@ -110,6 +120,14 @@
 		    <artifactId>javax.servlet.jsp.jstl-api</artifactId>
 		    <version>1.2.1</version>
 		</dependency>-->
+         
+         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.21</version>
+</dependency>
+         
          
         <dependency>
             <groupId>javax.servlet</groupId>

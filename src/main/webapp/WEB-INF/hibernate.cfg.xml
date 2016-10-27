@@ -21,5 +21,6 @@
    <property name="hibernate.connection.password">
       root
    </property>
+   <mapping class="com.minsk.kozlow.models.Customers"/>
 </session-factory>
 </hibernate-configuration>

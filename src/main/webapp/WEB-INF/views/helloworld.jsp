@@ -13,10 +13,7 @@
 		<h2>Hello world</h2>
 		<h2> ${message} ${name}</h2>
 	</center>
-	
-<sql:query var="rs" dataSource="jdbc/plcp">
-select id_customer, last_name, first_name, phone from customers
-</sql:query>
+<h1>${mv}</h1><!-- 
 <table>
 	<tbody>
 <c:forEach var="row" items="${rs.rows}">
@@ -28,6 +25,6 @@ select id_customer, last_name, first_name, phone from customers
 	</tr>
 </c:forEach>
 	</tbody>
-</table>
+</table> -->
 </body>
 </html>

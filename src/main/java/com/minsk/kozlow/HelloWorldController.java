@@ -3,6 +3,7 @@ package com.minsk.kozlow;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -18,6 +19,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.minsk.kozlow.dao.Factory;
+import com.minsk.kozlow.models.Customers;
+
 
 
 
@@ -29,10 +33,13 @@ public class HelloWorldController {
 	@RequestMapping(value="/helloo")
 	public ModelAndView showMessage(@RequestParam(value="name", required=false, defaultValue="World") String name){
 		System.out.println("in controller");
-		
+		Customers cs = Factory.getInstance().getCustomersDao().getCustomerById(new Long(1));
+		System.out.println("!!!!!!!!!!!!!!!!!"+cs.getFirstName());
 		ModelAndView mv= new ModelAndView("helloworld");
 		mv.addObject("message", message);
 		mv.addObject("name", name);
+		
+		mv.addObject("mv", mv);
 		return mv;
 	}
 	
